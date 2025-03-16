@@ -1,19 +1,19 @@
-import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { useRouter } from "expo-router";
-import { useAuth } from "@/context/context";
+import React from 'react'
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+import { useRouter } from 'expo-router'
+import { useAuth } from '@/context/context'
+
+const myImage = require('../assets/loginImage.jpg')
 
 export default function StartPage() {
-  const router = useRouter();
-  const { onAuthenticate } = useAuth();
+  const router = useRouter()
+  const { onAuthenticate } = useAuth()
 
   const handlePress = async () => {
-    await onAuthenticate();
-    router.push("/(tabs)");
-  };
-  const myImage = require("../assets/loginImage.jpg");
-
+    await onAuthenticate()
+    router.push('/(tabs)')
+  }
   return (
     <View style={styles.container}>
       <Image source={myImage} style={styles.image} />
@@ -25,7 +25,7 @@ export default function StartPage() {
         <Text style={styles.text}>Start</Text>
       </TouchableOpacity>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -39,28 +39,28 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 50,
-    fontWeight: "400",
-    textAlign: "center",
+    fontWeight: '400',
+    textAlign: 'center',
     marginVertical: 30,
   },
   description: {
     fontSize: 18,
-    textAlign: "center",
+    textAlign: 'center',
     marginHorizontal: 20,
     marginBottom: 50,
   },
   text: {
-    color: "white",
+    color: 'white',
     fontSize: 20,
-    fontWeight: "500",
+    fontWeight: '500',
   },
   btn: {
     width: 200,
-    alignItems: "center",
-    justifyContent: "center",
-    alignSelf: "center",
-    backgroundColor: "red",
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    backgroundColor: 'red',
     padding: 10,
     borderRadius: 5,
   },
-});
+})

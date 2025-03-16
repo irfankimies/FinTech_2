@@ -1,13 +1,34 @@
-import { View, Text, StyleSheet, TouchableOpacity, Modal } from "react-native";
-import * as LocalAuthentication from "expo-local-authentication";
-import { useState } from "react";
+import { View, Text, StyleSheet, TouchableOpacity, Modal } from 'react-native'
+
+type Transaction = {
+  amount: string
+  time: string
+  status: string
+  id: string
+  to: {
+    name: string
+    bank: string
+    account: string
+  }
+  from: {
+    name: string
+  }
+  date: string
+  transferType: string
+  recipientReference: string
+}
+type TransactionDetailProps = {
+  modalVisible: boolean
+  setModalVisible: (visible: boolean) => void
+  selectedTransaction?: Transaction
+}
+
 
 export default function TransactionDetail({
   modalVisible,
   setModalVisible,
   selectedTransaction,
-}: any) {
-
+}: TransactionDetailProps) {
   return (
     <Modal
       animationType="slide"
@@ -20,8 +41,8 @@ export default function TransactionDetail({
           <Text style={styles.modalHeader}>Transaction Details</Text>
           {selectedTransaction && (
             <View>
-              <View style={{gap: 10, alignItems: 'center', marginTop: 15}}>
-                <Text style={{fontSize: 14}}>Amount</Text>
+              <View style={{ gap: 10, alignItems: 'center', marginTop: 15 }}>
+                <Text style={{ fontSize: 14 }}>Amount</Text>
                 <Text style={styles.amountText}>
                   {selectedTransaction.amount}
                 </Text>
@@ -29,7 +50,12 @@ export default function TransactionDetail({
               </View>
 
               {/* status */}
-              <View style={[styles.transactionDetails, {paddingTop: 40, borderTopWidth: 1, borderTopColor: '#ddd'}]}>
+              <View
+                style={[
+                  styles.transactionDetails,
+                  { paddingTop: 40, borderTopWidth: 1, borderTopColor: '#ddd' },
+                ]}
+              >
                 <Text style={styles.label}>Status</Text>
                 <Text style={[styles.value, styles.success]}>
                   {selectedTransaction.status}
@@ -43,11 +69,11 @@ export default function TransactionDetail({
               {/* To */}
               <View style={styles.transactionDetails}>
                 <Text style={styles.label}>To</Text>
-                <View style={{ alignItems: "flex-end" }}>
+                <View style={{ alignItems: 'flex-end' }}>
                   <Text style={styles.value}>
                     {selectedTransaction.to.name}
                   </Text>
-                  <View style={{ flexDirection: "row", gap: 10 }}>
+                  <View style={{ flexDirection: 'row', gap: 10 }}>
                     <Text style={styles.value}>
                       {selectedTransaction.to.bank}
                     </Text>
@@ -97,44 +123,44 @@ export default function TransactionDetail({
         </View>
       </View>
     </Modal>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   modalContainer: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    paddingTop: 4
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    paddingTop: 4,
   },
   modalContent: {
-    width: "100%",
+    width: '100%',
     height: '100%',
-    backgroundColor: "white",
+    backgroundColor: 'white',
     padding: 20,
     borderRadius: 25,
   },
   modalHeader: {
     fontSize: 18,
-    fontWeight: "bold",
-    textAlign: "center",
+    fontWeight: 'bold',
+    textAlign: 'center',
     marginBottom: 10,
   },
-  transactionDetails:{
-    flexDirection: "row",
-    justifyContent: "space-between",
+  transactionDetails: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     marginVertical: 10,
   },
   amountText: {
     fontSize: 20,
-    fontWeight: "semibold",
-    textAlign: "center",
+    fontWeight: 'semibold',
+    textAlign: 'center',
   },
   dateText: {
     fontSize: 14,
-    textAlign: "center",
-    color: "gray",
+    textAlign: 'center',
+    color: 'gray',
     marginBottom: 10,
     paddingBottom: 20,
   },
@@ -142,29 +168,29 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   value: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
     fontSize: 14,
-    color: "black",
+    color: 'black',
   },
   success: {
-    color: "green",
+    color: 'green',
   },
   bottomButtons: {
-    flexDirection: "row",
-    justifyContent: "space-around",
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     marginTop: 20,
   },
   shareButton: {
-    backgroundColor: "#27ae60",
+    backgroundColor: '#27ae60',
     padding: 10,
     borderRadius: 50,
   },
   shareText: {
-    color: "white",
+    color: 'white',
     fontSize: 18,
   },
   doneButton: {
-    backgroundColor: "red",
+    backgroundColor: 'red',
     marginTop: 130,
     padding: 10,
     borderRadius: 5,
@@ -172,8 +198,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   doneText: {
-    color: "white",
+    color: 'white',
     fontSize: 18,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
-});
+})

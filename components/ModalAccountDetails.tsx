@@ -1,10 +1,9 @@
-
 import { View, Text, Modal, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 interface ModalAccountDetailsProps {
-  modalVisible: boolean;
-  setModalVisible: React.Dispatch<React.SetStateAction<boolean>>;
+  modalVisible: boolean
+  setModalVisible: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const ModalAccountDetails = ({
@@ -50,7 +49,7 @@ const ModalAccountDetails = ({
               <Text style={styles.text2}>active</Text>
             </View>
           </View>
-          <View style={{ alignItems: "center" }}>
+          <View style={{ alignItems: 'center' }}>
             <TouchableOpacity
               style={styles.doneButton}
               onPress={() => setModalVisible(false)}
@@ -61,41 +60,41 @@ const ModalAccountDetails = ({
         </View>
       </View>
     </Modal>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   modalContainer: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 4,
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalContent: {
-    width: "100%",
-    height: "100%",
-    backgroundColor: "white",
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'white',
     padding: 20,
     borderRadius: 25,
   },
   content: {
     paddingVertical: 30,
     borderBottomWidth: 1,
-    borderBottomColor: "#bbb",
+    borderBottomColor: '#bbb',
   },
   title: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   title2: {
     fontSize: 22,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   text1: {
-    color: "black",
+    color: 'black',
   },
   text2: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   doneButton: {
     backgroundColor: 'red',
@@ -103,13 +102,13 @@ const styles = StyleSheet.create({
     padding: 10,
     width: '85%',
     alignItems: 'center',
-    borderRadius: 5
+    borderRadius: 5,
   },
   buttonText: {
     color: 'white',
     fontSize: 18,
-    fontWeight: 'bold'
-  }
-});
+    fontWeight: 'bold',
+  },
+})
 
 export default ModalAccountDetails

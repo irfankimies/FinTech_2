@@ -1,26 +1,26 @@
-import {Tabs} from 'expo-router';
-import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from 'expo-router'
+import { Ionicons } from '@expo/vector-icons'
 
-export default function TabLayout(){
-  return ( 
+export default function TabLayout() {
+  return (
     <Tabs
-      screenOptions={({route}) => ({
+      screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
-          let iconName: 'home' | 'wallet-outline' | undefined;
+          let iconName: 'home' | 'wallet-outline' | undefined
           if (route.name === 'index') {
-            iconName = 'home';
+            iconName = 'home'
           } else if (route.name === 'account') {
-            iconName = 'wallet-outline';
+            iconName = 'wallet-outline'
           }
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <Ionicons name={iconName} size={size} color={color} />
         },
         tabBarActiveTintColor: 'red',
         tabBarInactiveTintColor: 'gray',
         headerShown: false,
       })}
     >
-      <Tabs.Screen name='index' options={{ title: 'Home'}} />
-      <Tabs.Screen name='account' options={{ title: 'Account'}} />
+      <Tabs.Screen name="index" options={{ title: 'Home' }} />
+      <Tabs.Screen name="account" options={{ title: 'Account' }} />
     </Tabs>
   )
 }
