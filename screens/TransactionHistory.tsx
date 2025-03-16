@@ -42,9 +42,7 @@ export default function TransactionHistory() {
   const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(false)
   const [refreshing, setRefreshing] = useState(false)
-
   const { onAuthenticate, setIsAuthenticated } = useAuth()
-
   const route = useRoute()
 
   useEffect(() => {

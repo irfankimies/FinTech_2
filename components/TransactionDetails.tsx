@@ -23,7 +23,6 @@ type TransactionDetailProps = {
   selectedTransaction?: Transaction
 }
 
-
 export default function TransactionDetail({
   modalVisible,
   setModalVisible,
