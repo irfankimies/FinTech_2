@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'
 import { useRouter } from 'expo-router'
 import { useAuth } from '@/context/context'
+import Colors from '@/constants/colors'
 
 const myImage = require('../assets/loginImage.jpg')
 
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
   text: {
-    color: 'white',
+    color: Colors.WHITE,
     fontSize: 20,
     fontWeight: '500',
   },
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    backgroundColor: 'red',
+    backgroundColor: Colors.LIGHT_RED,
     padding: 10,
     borderRadius: 5,
   },
