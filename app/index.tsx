@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import StartPage from '@/screens/onBoarding'
 import Colors from '@/constants/colors'
+import OnBoarding from '@/screens/OnBoarding' // Adjust the path as needed
 
 const logInPage = () => {
   return (
     <View style={styles.container}>
-      <StartPage />
+      <OnBoarding />
     </View>
   )
 }

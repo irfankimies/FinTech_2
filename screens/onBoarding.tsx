@@ -1,12 +1,11 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
 import { useRouter } from 'expo-router'
 import { useAuth } from '@/context/context'
 
 const myImage = require('../assets/loginImage.jpg')
 
-export default function StartPage() {
+export default function onBoarding() {
   const router = useRouter()
   const { onAuthenticate } = useAuth()
 
