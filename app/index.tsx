@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import StartPage from '@/screens/StartPage'
+import StartPage from '@/screens/onBoarding'
+import Colors from '@/constants/colors'
 
 const logInPage = () => {
   return (
@@ -13,7 +14,7 @@ const logInPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.WHITE,
   },
 })
 

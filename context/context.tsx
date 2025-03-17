@@ -7,11 +7,13 @@ import React, {
 } from 'react'
 import * as LocalAuthentication from 'expo-local-authentication'
 import { Alert } from 'react-native'
+import { ImageSourcePropType } from 'react-native'
 
 type AuthContextType = {
   isAuthenticated: boolean
   onAuthenticate: () => void
   setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>
+  getIcon: (iconPath: string) => ImageSourcePropType
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -53,10 +55,27 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setIsAuthenticated(false)
     return false
   }
+const getIcon = (iconPath: string): ImageSourcePropType => {
+  const icons: Record<string, ImageSourcePropType> = {
+    '../assets/bank1.png': require('../assets/bank1.png'),
+    '../assets/duitnow.png': require('../assets/duitnow.png'),
+    '../assets/bill.png': require('../assets/bill.png'),
+    '../assets/topup.png': require('../assets/topup.png'),
+    '../assets/subscription.png': require('../assets/subscription.png'),
+    '../assets/atm.png': require('../assets/atm.png'),
+    '../assets/shopping.png': require('../assets/shopping.png'),
+    '../assets/food.png': require('../assets/food.png'), 
+    '../assets/gift.png': require('../assets/gift.png'),
+    '../assets/movie.png': require('../assets/movie.png'), 
+    '../assets/gym.png': require('../assets/gym.png'), 
+  }
+
+  return icons[iconPath] || require('../assets/default.png') // Fallback image
+}
 
   return (
     <AuthContext.Provider
-      value={{ onAuthenticate, isAuthenticated, setIsAuthenticated }}
+      value={{ onAuthenticate, isAuthenticated, setIsAuthenticated, getIcon }}
     >
       {children}
     </AuthContext.Provider>

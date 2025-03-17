@@ -8,6 +8,7 @@ import {
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import ModalAccountDetails from '../components/ModalAccountDetails'
+import Colors from '@/constants/colors'
 
 const AccountDetails = () => {
   const [modalVisible, setModalVisible] = useState(false)
@@ -66,10 +67,9 @@ const AccountDetails = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
   },
   header: {
-    backgroundColor: '#d10000',
+    backgroundColor: Colors.RED,
     paddingVertical: 16,
     paddingHorizontal: 20,
   },
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   balanceContainer: {
-    backgroundColor: '#d10000',
+    backgroundColor: Colors.RED,
     alignItems: 'center',
     paddingHorizontal: 20,
     paddingBottom: 35,
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   balanceAmount: {
-    color: 'white',
+    color: Colors.WHITE,
     fontSize: 24,
     fontWeight: 'semibold',
     marginTop: 4,
@@ -101,10 +101,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: -15,
     borderRadius: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: Colors.BG_GRAY,
   },
   accountCard: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.WHITE,
     borderRadius: 12,
     margin: 16,
     overflow: 'hidden',
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   accountName: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
+    color: Colors.BLACK,
   },
   accountNumberRow: {
     flexDirection: 'column',
@@ -136,13 +136,13 @@ const styles = StyleSheet.create({
   },
   activeTag: {
     borderWidth: 1,
-    borderColor: '#24E0A3',
+    borderColor: Colors.AQUA_GREEN,
     paddingHorizontal: 8,
     paddingVertical: 2,
     borderRadius: 4,
   },
   activeTagText: {
-    color: '#24E0A3',
+    color: Colors.AQUA_GREEN,
     fontSize: 12,
     fontWeight: '500',
   },
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
     paddingBottom: 16,
     borderBottomWidth: 1,
-    borderColor: '#ddd',
+    borderColor: Colors.LIGHT_GRAY,
   },
   detailsButton: {
     marginTop: 8,
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   detailsButtonText: {
-    color: '#333',
+    color: Colors.GRAY_TEXT,
     fontSize: 14,
     fontWeight: 'bold',
   },

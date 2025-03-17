@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity, Modal } from 'react-native'
+import Colors from '@/constants/colors'
 
 type Transaction = {
   amount: string
@@ -130,13 +131,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: Colors.BG_MODAL,
     paddingTop: 4,
   },
   modalContent: {
     width: '100%',
     height: '100%',
-    backgroundColor: 'white',
+    backgroundColor: Colors.WHITE,
     padding: 20,
     borderRadius: 25,
   },
@@ -172,24 +173,15 @@ const styles = StyleSheet.create({
     color: 'black',
   },
   success: {
-    color: 'green',
+    color: Colors.GREEN,
   },
   bottomButtons: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     marginTop: 20,
   },
-  shareButton: {
-    backgroundColor: '#27ae60',
-    padding: 10,
-    borderRadius: 50,
-  },
-  shareText: {
-    color: 'white',
-    fontSize: 18,
-  },
   doneButton: {
-    backgroundColor: 'red',
+    backgroundColor: Colors.LIGHT_RED,
     marginTop: 130,
     padding: 10,
     borderRadius: 5,
@@ -197,7 +189,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   doneText: {
-    color: 'white',
+    color: Colors.WHITE,
     fontSize: 18,
     fontWeight: 'bold',
   },

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import AccountDetails from '@/screens/AccountDetails'
 import { useRoute } from '@react-navigation/native'
 import { useAuth } from '@/context/context'
+import Colors from '@/constants/colors'
 
 const account = () => {
   const { onAuthenticate } = useAuth()
@@ -21,7 +22,7 @@ const account = () => {
   if (loading) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator size={'large'} color={'red'} />
+        <ActivityIndicator size={'large'} color={Colors.LIGHT_RED} />
       </View>
     )
   }

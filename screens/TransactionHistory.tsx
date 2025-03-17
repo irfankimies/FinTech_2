@@ -10,10 +10,11 @@ import {
   ActivityIndicator,
   RefreshControl,
 } from 'react-native'
-import transactions from '../components/data'
+import transactions from '../data.json'
 import TransactionDetail from '../components/TransactionDetails'
 import { useAuth } from '@/context/context'
 import { useRoute } from '@react-navigation/native'
+import Colors from '@/constants/colors'
 
 type Transaction = {
   amount: string
@@ -31,7 +32,7 @@ type Transaction = {
   date: string
   transferType: string
   recipientReference: string
-  icon: number
+  icon: string
   title: string
 }
 
@@ -42,7 +43,7 @@ export default function TransactionHistory() {
   const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(false)
   const [refreshing, setRefreshing] = useState(false)
-  const { onAuthenticate, setIsAuthenticated } = useAuth()
+  const { onAuthenticate, setIsAuthenticated, getIcon } = useAuth()
   const route = useRoute()
 
   useEffect(() => {
@@ -72,7 +73,7 @@ export default function TransactionHistory() {
       setVisibleData(nextData)
       setPage(nextPage)
       setLoading(false)
-    }, 1000)
+    }, 300)
   }
 
   const renderTransaction = ({ item }: { item: Transaction }) => {
@@ -90,7 +91,7 @@ export default function TransactionHistory() {
           }}
         >
           <View style={styles.leftSection}>
-            <Image source={item.icon} style={styles.icon} />
+            <Image source={getIcon(item.icon)} style={styles.icon} />
             <View>
               <Text style={styles.transactionTitle}>{item.title}</Text>
               <Text style={styles.transactionDetails}>{item.to.account}</Text>
@@ -144,7 +145,7 @@ export default function TransactionHistory() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: Colors.WHITE,
     paddingHorizontal: 16,
     paddingTop: 10,
   },
@@ -159,7 +160,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 15,
     borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
+    borderBottomColor: Colors.LIGHT_GRAY,
     borderStyle: 'dashed',
   },
   leftSection: {
@@ -184,7 +185,7 @@ const styles = StyleSheet.create({
   },
   transactionType: {
     fontSize: 12,
-    color: '#999',
+    color: Colors.GRAY,
   },
   statusBadge: {
     paddingHorizontal: 6,
@@ -193,15 +194,15 @@ const styles = StyleSheet.create({
     marginTop: 4,
     alignSelf: 'flex-start',
     borderWidth: 1,
-    borderColor: 'green',
+    borderColor: Colors.SUCCESS,
   },
   statusText: {
-    color: '#3c763d',
+    color: Colors.SUCCESS,
     fontSize: 12,
   },
   amount: {
     fontSize: 15,
     fontWeight: 'bold',
-    color: 'red',
+    color: Colors.LIGHT_RED,
   },
 })

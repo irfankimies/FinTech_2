@@ -8,11 +8,12 @@ import {
 } from 'react-native'
 import React from 'react'
 import TransactionHistory from '@/screens/TransactionHistory'
+import Colors from '@/constants/colors'
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#d10000" barStyle="light-content" />
+      <StatusBar backgroundColor={Colors.LIGHT_RED} barStyle="light-content" />
       <View style={styles.header}>
         <Text style={styles.headerText}>Transaction History</Text>
         <TouchableOpacity>
@@ -27,7 +28,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: Colors.WHITE,
     paddingHorizontal: 16,
     paddingTop: 20,
   },
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   tapToView: {
-    color: 'red',
+    color: Colors.LIGHT_RED,
     fontWeight: '600',
   },
 })

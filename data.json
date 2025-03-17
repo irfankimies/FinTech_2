@@ -1,0 +1,531 @@
+[
+  {
+    "id": "1",
+    "date": "Fri, 08 Mar 2025",
+    "title": "Online Shopping",
+    "referenceNumber": "987654321",
+    "to": {
+      "name": "Amazon Malaysia",
+      "bank": "Maybank",
+      "account": "1111222233"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 120.00",
+    "status": "Successful",
+    "transferType": "Online Purchase",
+    "recipientReference": "Shopping Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "08 Mar 2025 2:15:30 PM",
+    "icon": "../assets/shopping.png"
+  },
+  {
+    "id": "2",
+    "date": "Thu, 07 Mar 2025",
+    "title": "Bill Payment",
+    "referenceNumber": "456789123",
+    "to": {
+      "name": "TNB Malaysia",
+      "bank": "Public Bank",
+      "account": "7777888899"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 90.00",
+    "status": "Successful",
+    "transferType": "Bill Payment",
+    "recipientReference": "Electricity Bill",
+    "bankCharges": "MYR 0.00",
+    "time": "07 Mar 2025 10:30:20 AM",
+    "icon": "../assets/bill.png"
+  },
+  {
+    "id": "3",
+    "date": "Wed, 06 Mar 2025",
+    "title": "DuitNow QR",
+    "referenceNumber": "789654123",
+    "to": {
+      "name": "Starbucks Malaysia",
+      "bank": "DuitNow QR",
+      "account": "6666777788"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 18.50",
+    "status": "Successful",
+    "transferType": "DuitNow QR",
+    "recipientReference": "Food Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "06 Mar 2025 5:45:10 PM",
+    "icon": "../assets/duitnow.png"
+  },
+  {
+    "id": "4",
+    "date": "Tue, 05 Mar 2025",
+    "title": "Cash Withdrawal",
+    "referenceNumber": "654321789",
+    "to": {
+      "name": "ATM Withdrawal",
+      "bank": "CIMB ATM",
+      "account": "N/A"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 300.00",
+    "status": "Successful",
+    "transferType": "ATM Withdrawal",
+    "recipientReference": "Cash Withdrawal",
+    "bankCharges": "MYR 0.00",
+    "time": "05 Mar 2025 12:30:50 PM",
+    "icon": "../assets/atm.png"
+  },
+  {
+    "id": "5",
+    "date": "Mon, 04 Mar 2025",
+    "title": "Mobile Prepaid Top-up",
+    "referenceNumber": "321789456",
+    "to": {
+      "name": "Maxis Prepaid",
+      "bank": "Maybank",
+      "account": "5555666677"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 50.00",
+    "status": "Successful",
+    "transferType": "Prepaid Top-up",
+    "recipientReference": "Mobile Top-up",
+    "bankCharges": "MYR 0.00",
+    "time": "04 Mar 2025 8:00:00 AM",
+    "icon": "../assets/topup.png"
+  },
+
+  {
+    "id": "6",
+    "date": "Sun, 03 Mar 2025",
+    "title": "Netflix Subscription",
+    "referenceNumber": "852963741",
+    "to": {
+      "name": "Netflix Malaysia",
+      "bank": "Public Bank",
+      "account": "9999888877"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 55.00",
+    "status": "Successful",
+    "transferType": "Online Subscription",
+    "recipientReference": "Entertainment",
+    "bankCharges": "MYR 0.00",
+    "time": "03 Mar 2025 10:00:30 AM",
+    "icon": "../assets/subscription.png"
+  },
+  {
+    "id": "7",
+    "date": "Sat, 02 Mar 2025",
+    "title": "Online Shopping",
+    "referenceNumber": "369852147",
+    "to": {
+      "name": "Shopee Malaysia",
+      "bank": "Maybank",
+      "account": "7777666655"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 130.00",
+    "status": "Successful",
+    "transferType": "Online Purchase",
+    "recipientReference": "Shopping Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "02 Mar 2025 1:45:20 PM",
+    "icon": "../assets/shopping.png"
+  },
+  {
+    "id": "8",
+    "date": "Fri, 01 Mar 2025",
+    "title": "DuitNow QR",
+    "referenceNumber": "951753258",
+    "to": {
+      "name": "McDonald's Malaysia",
+      "bank": "DuitNow QR",
+      "account": "1234432112"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 27.00",
+    "status": "Successful",
+    "transferType": "DuitNow QR",
+    "recipientReference": "Food Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "01 Mar 2025 7:10:30 PM",
+    "icon": "../assets/duitnow.png"
+  },
+  {
+    "id": "9",
+    "date": "Thu, 29 Feb 2025",
+    "title": "ATM Cash Withdrawal",
+    "referenceNumber": "789321654",
+    "to": {
+      "name": "ATM Withdrawal",
+      "bank": "CIMB ATM",
+      "account": "N/A"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 500.00",
+    "status": "Successful",
+    "transferType": "ATM Withdrawal",
+    "recipientReference": "Cash Withdrawal",
+    "bankCharges": "MYR 0.00",
+    "time": "29 Feb 2025 4:30:15 PM",
+    "icon": "../assets/atm.png"
+  },
+  {
+    "id": "10",
+    "date": "Wed, 28 Feb 2025",
+    "title": "Bill Payment",
+    "referenceNumber": "123654789",
+    "to": {
+      "name": "TNB Malaysia",
+      "bank": "Public Bank",
+      "account": "8888777766"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 100.00",
+    "status": "Successful",
+    "transferType": "Bill Payment",
+    "recipientReference": "Electricity Bill",
+    "bankCharges": "MYR 0.00",
+    "time": "28 Feb 2025 9:00:10 AM",
+    "icon": "../assets/bill.png"
+  },
+  {
+    "id": "11",
+    "date": "Tue, 27 Feb 2025",
+    "title": "Spotify Premium Subscription",
+    "referenceNumber": "654789321",
+    "to": {
+      "name": "Spotify Premium",
+      "bank": "Maybank",
+      "account": "6666555544"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 14.90",
+    "status": "Successful",
+    "transferType": "Online Subscription",
+    "recipientReference": "Music Subscription",
+    "bankCharges": "MYR 0.00",
+    "time": "27 Feb 2025 6:45:30 AM",
+    "icon": "../assets/subscription.png"
+  },
+  {
+    "id": "12",
+    "date": "Mon, 26 Feb 2025",
+    "title": "DuitNow Transfer",
+    "referenceNumber": "357258147",
+    "to": {
+      "name": "Ali Bin Abu",
+      "bank": "CIMB Malaysia",
+      "account": "1122334455"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 250.00",
+    "status": "Successful",
+    "transferType": "DuitNow Transfer",
+    "recipientReference": "Loan Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "26 Feb 2025 8:30:25 AM",
+    "icon": "../assets/bank1.png"
+  },
+  {
+    "id": "13",
+    "date": "Sun, 25 Feb 2025",
+    "title": "Mobile Prepaid Top-up",
+    "referenceNumber": "741963852",
+    "to": {
+      "name": "Digi Prepaid",
+      "bank": "Maybank",
+      "account": "4444333222"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 40.00",
+    "status": "Successful",
+    "transferType": "Prepaid Top-up",
+    "recipientReference": "Mobile Top-up",
+    "bankCharges": "MYR 0.00",
+    "time": "25 Feb 2025 2:20:00 PM",
+    "icon": "../assets/topup.png"
+  },
+  {
+    "id": "14",
+    "date": "Sat, 24 Feb 2025",
+    "title": "Online Shopping",
+    "referenceNumber": "369147852",
+    "to": {
+      "name": "Lazada Malaysia",
+      "bank": "Maybank",
+      "account": "2222111100"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 210.00",
+    "status": "Successful",
+    "transferType": "Online Purchase",
+    "recipientReference": "Shopping Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "24 Feb 2025 5:15:30 PM",
+    "icon": "../assets/shopping.png"
+  },
+  {
+    "id": "15",
+    "date": "Fri, 23 Feb 2025",
+    "title": "DuitNow QR",
+    "referenceNumber": "147369258",
+    "to": {
+      "name": "7-Eleven Malaysia",
+      "bank": "DuitNow QR",
+      "account": "9999000011"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 15.00",
+    "status": "Successful",
+    "transferType": "DuitNow QR",
+    "recipientReference": "Groceries Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "23 Feb 2025 9:30:15 PM",
+    "icon": "../assets/duitnow.png"
+  },
+  {
+    "id": "16",
+    "date": "Thu, 22 Feb 2025",
+    "title": "Online Subscription",
+    "referenceNumber": "258147369",
+    "to": {
+      "name": "Disney+ Malaysia",
+      "bank": "Public Bank",
+      "account": "8888999977"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 45.00",
+    "status": "Successful",
+    "transferType": "Online Subscription",
+    "recipientReference": "Entertainment",
+    "bankCharges": "MYR 0.00",
+    "time": "22 Feb 2025 11:20:10 AM",
+    "icon": "../assets/subscription.png"
+  },
+  {
+    "id": "17",
+    "date": "Wed, 21 Feb 2025",
+    "title": "Food Delivery",
+    "referenceNumber": "753951852",
+    "to": {
+      "name": "GrabFood Malaysia",
+      "bank": "Maybank",
+      "account": "7777888811"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 28.00",
+    "status": "Successful",
+    "transferType": "Online Payment",
+    "recipientReference": "Food Delivery",
+    "bankCharges": "MYR 0.00",
+    "time": "21 Feb 2025 7:45:30 PM",
+    "icon": "../assets/food.png"
+  },
+  {
+    "id": "18",
+    "date": "Tue, 20 Feb 2025",
+    "title": "DuitNow Transfer",
+    "referenceNumber": "852741963",
+    "to": {
+      "name": "Siti Aisyah",
+      "bank": "Public Bank",
+      "account": "6666444433"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 100.00",
+    "status": "Successful",
+    "transferType": "DuitNow Transfer",
+    "recipientReference": "Gift Money",
+    "bankCharges": "MYR 0.00",
+    "time": "20 Feb 2025 3:20:15 PM",
+    "icon": "../assets/bank1.png"
+  },
+  {
+    "id": "19",
+    "date": "Mon, 19 Feb 2025",
+    "title": "Movie Ticket",
+    "referenceNumber": "951357486",
+    "to": {
+      "name": "GSC Cinemas",
+      "bank": "CIMB Malaysia",
+      "account": "2222333344"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 40.00",
+    "status": "Successful",
+    "transferType": "Online Purchase",
+    "recipientReference": "Entertainment",
+    "bankCharges": "MYR 0.00",
+    "time": "19 Feb 2025 6:00:00 PM",
+    "icon": "../assets/movie.png"
+  },
+  {
+    "id": "20",
+    "date": "Sun, 18 Feb 2025",
+    "title": "Mobile Prepaid Top-up",
+    "referenceNumber": "456987321",
+    "to": {
+      "name": "Celcom Prepaid",
+      "bank": "Maybank",
+      "account": "1111333355"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 30.00",
+    "status": "Successful",
+    "transferType": "Prepaid Top-up",
+    "recipientReference": "Mobile Top-up",
+    "bankCharges": "MYR 0.00",
+    "time": "18 Feb 2025 9:30:10 AM",
+    "icon": "../assets/topup.png"
+  },
+  {
+    "id": "21",
+    "date": "Sat, 17 Feb 2025",
+    "title": "DuitNow QR",
+    "referenceNumber": "147258369",
+    "to": {
+      "name": "Starbucks Malaysia",
+      "bank": "DuitNow QR",
+      "account": "5555777788"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 18.00",
+    "status": "Successful",
+    "transferType": "DuitNow QR",
+    "recipientReference": "Beverage Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "17 Feb 2025 4:10:55 PM",
+    "icon": "../assets/duitnow.png"
+  },
+  {
+    "id": "22",
+    "date": "Fri, 16 Feb 2025",
+    "title": "Gym Membership Fee",
+    "referenceNumber": "369852147",
+    "to": {
+      "name": "Fitness First Malaysia",
+      "bank": "Public Bank",
+      "account": "8888666644"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 150.00",
+    "status": "Successful",
+    "transferType": "Online Subscription",
+    "recipientReference": "Health & Fitness",
+    "bankCharges": "MYR 0.00",
+    "time": "16 Feb 2025 12:15:30 PM",
+    "icon": "../assets/gym.png"
+  },
+  {
+    "id": "23",
+    "date": "Thu, 15 Feb 2025",
+    "title": "Online Shopping",
+    "referenceNumber": "753951852",
+    "to": {
+      "name": "Lazada Malaysia",
+      "bank": "Maybank",
+      "account": "4444555566"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 180.00",
+    "status": "Successful",
+    "transferType": "Online Purchase",
+    "recipientReference": "Shopping Payment",
+    "bankCharges": "MYR 0.00",
+    "time": "15 Feb 2025 2:30:40 PM",
+    "icon": "../assets/shopping.png"
+  },
+  {
+    "id": "24",
+    "date": "Wed, 14 Feb 2025",
+    "title": "Valentine’s Day Gift",
+    "referenceNumber": "852147369",
+    "to": {
+      "name": "FlowerShop Malaysia",
+      "bank": "CIMB Malaysia",
+      "account": "2222444488"
+    },
+    "from": {
+      "name": "Irfan",
+      "account": "7624956123"
+    },
+    "amount": "- MYR 100.00",
+    "status": "Successful",
+    "transferType": "Online Purchase",
+    "recipientReference": "Gift Purchase",
+    "bankCharges": "MYR 0.00",
+    "time": "14 Feb 2025 5:00:10 PM",
+    "icon": "../assets/gift.png"
+  }
+]

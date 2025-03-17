@@ -1,5 +1,6 @@
 import { View, Text, Modal, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
+import Colors from '@/constants/colors'
 
 interface ModalAccountDetailsProps {
   modalVisible: boolean
@@ -69,19 +70,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 4,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: Colors.BG_MODAL,
   },
   modalContent: {
     width: '100%',
     height: '100%',
-    backgroundColor: 'white',
+    backgroundColor: Colors.WHITE,
     padding: 20,
     borderRadius: 25,
   },
   content: {
     paddingVertical: 30,
     borderBottomWidth: 1,
-    borderBottomColor: '#bbb',
+    borderBottomColor: Colors.LIGHT_GRAY,
   },
   title: {
     alignItems: 'center',
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   doneButton: {
-    backgroundColor: 'red',
+    backgroundColor: Colors.LIGHT_RED,
     marginTop: 110,
     padding: 10,
     width: '85%',
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   buttonText: {
-    color: 'white',
+    color: Colors.WHITE,
     fontSize: 18,
     fontWeight: 'bold',
   },
