@@ -59,7 +59,7 @@ export default function TransactionHistory() {
     setVisibleData([])
     setTimeout(() => {
       setPage(1)
-      setVisibleData(transactions.slice(0, 5))
+      setVisibleData(transactions.slice(0, 6))
       setRefreshing(false)
     }, 2000)
   }
