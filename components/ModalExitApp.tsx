@@ -1,3 +1,4 @@
+import Colors from '@/constants/colors'
 import React, { useState } from 'react'
 import { Modal, View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
@@ -7,7 +8,7 @@ type Props = {
   onExit: () => void
 }
 
-const ModalExitApp = ({ visible, onClose, onExit}: Props) => {
+const ModalExitApp = ({ visible, onClose, onExit }: Props) => {
   return (
     <Modal visible={visible} transparent animationType="fade">
       <View style={styles.overlay}>
@@ -31,23 +32,15 @@ const ModalExitApp = ({ visible, onClose, onExit}: Props) => {
   )
 }
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f5f5f5',
-  },
-  triggerButton: { padding: 15, backgroundColor: '#d32f2f', borderRadius: 8 },
-  triggerText: { color: 'white', fontWeight: 'bold' },
   overlay: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: Colors.BG_MODAL,
   },
   modal: {
     width: 300,
-    backgroundColor: 'white',
+    backgroundColor: Colors.WHITE,
     borderRadius: 10,
     padding: 20,
     alignItems: 'center',
@@ -56,21 +49,21 @@ const styles = StyleSheet.create({
   message: { fontSize: 14, textAlign: 'center', marginBottom: 20 },
   buttonContainer: { flexDirection: 'row', gap: 10 },
   noButton: {
-    backgroundColor: '#666',
+    backgroundColor: Colors.GRAY,
     padding: 10,
     borderRadius: 5,
     flex: 1,
     alignItems: 'center',
   },
   yesButton: {
-    backgroundColor: '#d32f2f',
+    backgroundColor: Colors.RED,
     padding: 10,
     borderRadius: 5,
     flex: 1,
     alignItems: 'center',
   },
-  noText: { color: 'white', fontWeight: 'bold' },
-  yesText: { color: 'white', fontWeight: 'bold' },
+  noText: { color: Colors.WHITE, fontWeight: 'bold' },
+  yesText: { color: Colors.WHITE, fontWeight: 'bold' },
 })
 
 export default ModalExitApp
