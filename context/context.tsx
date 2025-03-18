@@ -40,6 +40,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false)
 
+  
+
   const onAuthenticate = async () => {
     try {
       const result = await LocalAuthentication.authenticateAsync({
