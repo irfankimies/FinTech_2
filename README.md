@@ -52,7 +52,7 @@ FinTech_2/
 
 ## ❗ Notes
 - This app was developed and tested on Expo SDK **version X.X.X** (update if needed).
-- If any API keys or environment variables are required, they should be placed in an `.env` file.
+- No external API keys or environment variables are required.
 
 ## 📩 Submission
 This project is part of an assignment. If you have any issues running it, feel free to reach out!
