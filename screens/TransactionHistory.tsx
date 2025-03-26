@@ -37,7 +37,7 @@ type Transaction = {
 }
 
 export default function TransactionHistory() {
-  const [selectedTransaction, setSelectedTransaction] = useState<any>(null)
+  const [selectedTransaction, setSelectedTransaction] = useState(null)
   const [modalVisible, setModalVisible] = useState(false)
   const [visibleData, setVisibleData] = useState(transactions.slice(0, 5))
   const [page, setPage] = useState(1)

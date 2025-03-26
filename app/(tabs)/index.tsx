@@ -32,7 +32,6 @@ const HomeScreen = () => {
     navigation.goBack()
   }
   
-
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={Colors.LIGHT_RED} barStyle="light-content" />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { render } from '@testing-library/react-native'
 import { Text } from 'react-native'
 import { AuthProvider, useAuth } from './context'
@@ -16,7 +16,7 @@ describe('AuthContext', () => {
     const TestComponent = () => {
       const { isAuthenticated, onAuthenticate } = useAuth()
 
-      React.useEffect(() => {
+      useEffect(() => {
         onAuthenticate()
       }, [])
 
@@ -42,7 +42,7 @@ describe('AuthContext', () => {
     const TestComponent = () => {
       const { isAuthenticated, onAuthenticate } = useAuth()
 
-      React.useEffect(() => {
+      useEffect(() => {
         onAuthenticate()
       }, [])
 
