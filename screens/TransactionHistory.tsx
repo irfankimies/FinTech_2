@@ -37,7 +37,7 @@ type Transaction = {
 }
 
 export default function TransactionHistory() {
-  const [selectedTransaction, setSelectedTransaction] = useState(null)
+  const [selectedTransaction, setSelectedTransaction] = useState<Transaction | undefined>(undefined)
   const [modalVisible, setModalVisible] = useState(false)
   const [visibleData, setVisibleData] = useState(transactions.slice(0, 5))
   const [page, setPage] = useState(1)
@@ -85,7 +85,7 @@ export default function TransactionHistory() {
           style={styles.transactionItem}
           onPress={async () => {
             const selected = transactions.find((t) => t.id === item.id)
-            setSelectedTransaction(selected || null)
+            setSelectedTransaction(selected || undefined)
             await onAuthenticate()
             setModalVisible(true)
           }}
